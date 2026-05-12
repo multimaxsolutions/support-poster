@@ -29,19 +29,8 @@
       line-height:1.45;
     }
 
-    .page{
-      max-width:1180px;
-      margin:0 auto;
-      padding:28px 18px;
-    }
-
-    .flyer{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:30px;
-      overflow:hidden;
-      box-shadow:var(--shadow);
-    }
+    .page{max-width:1180px;margin:0 auto;padding:28px 18px;}
+    .flyer{background:var(--card);border:1px solid var(--line);border-radius:30px;overflow:hidden;box-shadow:var(--shadow);}
 
     .hero{
       position:relative;
@@ -55,394 +44,96 @@
         linear-gradient(135deg,#ffffff 0%,#f5faff 55%,#eaf4ff 100%);
     }
 
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:9px;
-      background:#eaf3ff;
-      color:var(--blue-2);
-      border:1px solid #cfe4ff;
-      padding:10px 16px;
-      border-radius:999px;
-      font-size:14px;
-      font-weight:800;
-      margin-bottom:20px;
-    }
-
+    .badge{display:inline-flex;align-items:center;gap:9px;background:#eaf3ff;color:var(--blue-2);border:1px solid #cfe4ff;padding:10px 16px;border-radius:999px;font-size:14px;font-weight:800;margin-bottom:20px;}
     .badge span{font-size:18px;}
+    h1{font-size:64px;line-height:.95;letter-spacing:-2.4px;color:var(--navy);text-transform:uppercase;font-weight:950;margin-bottom:18px;}
+    h1 strong{color:var(--blue);display:block;}
+    .accent-line{width:128px;height:6px;border-radius:20px;background:var(--yellow);margin:20px 0 24px;}
+    .lead{font-size:22px;color:var(--muted);max-width:680px;margin-bottom:28px;font-weight:600;}
 
-    h1{
-      font-size:64px;
-      line-height:.95;
-      letter-spacing:-2.4px;
-      color:var(--navy);
-      text-transform:uppercase;
-      font-weight:950;
-      margin-bottom:18px;
-    }
-
-    h1 strong{
-      color:var(--blue);
-      display:block;
-    }
-
-    .accent-line{
-      width:128px;
-      height:6px;
-      border-radius:20px;
-      background:var(--yellow);
-      margin:20px 0 24px;
-    }
-
-    .lead{
-      font-size:22px;
-      color:var(--muted);
-      max-width:680px;
-      margin-bottom:28px;
-      font-weight:600;
-    }
-
-    .cta-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap:14px;
-      align-items:center;
-      margin-bottom:28px;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:15px 22px;
-      border-radius:16px;
-      font-weight:900;
-      text-decoration:none;
-      transition:.25s ease;
-      border:0;
-      cursor:pointer;
-    }
-
-    .btn-primary{
-      background:var(--green);
-      color:#fff;
-      box-shadow:0 12px 24px rgba(37,211,102,.28);
-    }
-
+    .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:28px;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:16px;font-weight:900;text-decoration:none;transition:.25s ease;border:0;cursor:pointer;}
+    .btn-primary{background:var(--green);color:#fff;box-shadow:0 12px 24px rgba(37,211,102,.28);}
     .btn-primary:hover{transform:translateY(-2px);filter:brightness(.96);}
+    .btn-secondary{background:#fff;color:var(--blue-2);border:1px solid #cfe4ff;}
 
-    .btn-secondary{
-      background:#fff;
-      color:var(--blue-2);
-      border:1px solid #cfe4ff;
-    }
+    .benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:720px;}
+    .benefit{background:rgba(255,255,255,.78);backdrop-filter:blur(10px);border:1px solid #e1ecfa;border-radius:18px;padding:18px 12px;text-align:center;color:#16345f;font-size:14px;font-weight:850;box-shadow:0 8px 20px rgba(18,73,146,.07);}
+    .benefit .ico{display:block;font-size:32px;margin-bottom:8px;}
 
-    .benefits{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:14px;
-      max-width:720px;
-    }
-
-    .benefit{
-      background:rgba(255,255,255,.78);
-      backdrop-filter:blur(10px);
-      border:1px solid #e1ecfa;
-      border-radius:18px;
-      padding:18px 12px;
-      text-align:center;
-      color:#16345f;
-      font-size:14px;
-      font-weight:850;
-      box-shadow:0 8px 20px rgba(18,73,146,.07);
-    }
-
-    .benefit .ico{
-      display:block;
-      font-size:32px;
-      margin-bottom:8px;
-    }
-
-    .hero-art{
-      position:relative;
-      min-height:420px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .speech{
-      position:absolute;
-      top:0;
-      left:20px;
-      right:0;
-      z-index:4;
-      background:linear-gradient(135deg,#092954,#164b94);
-      color:#fff;
-      border-radius:24px;
-      padding:22px 26px;
-      font-size:26px;
-      font-weight:950;
-      box-shadow:0 18px 34px rgba(7,29,58,.2);
-    }
-
+    .hero-art{position:relative;min-height:420px;display:flex;align-items:center;justify-content:center;}
+    .speech{position:absolute;top:0;left:20px;right:0;z-index:4;background:linear-gradient(135deg,#092954,#164b94);color:#fff;border-radius:24px;padding:22px 26px;font-size:26px;font-weight:950;box-shadow:0 18px 34px rgba(7,29,58,.2);}
     .speech span{color:var(--yellow);}
-
-    .screen-wrap{
-      position:relative;
-      width:520px;
-      height:330px;
-      margin-top:70px;
-    }
-
-    .screen{
-      position:absolute;
-      right:24px;
-      bottom:34px;
-      width:370px;
-      height:230px;
-      background:#112943;
-      border:10px solid #9fb8d8;
-      border-radius:20px 20px 8px 8px;
-      padding:22px;
-      box-shadow:0 24px 45px rgba(7,29,58,.18);
-    }
-
-    .screen:after{
-      content:"";
-      position:absolute;
-      left:-44px;
-      right:-44px;
-      bottom:-30px;
-      height:30px;
-      background:#c4d0de;
-      border-radius:0 0 30px 30px;
-    }
-
-    .code-line{
-      height:10px;
-      border-radius:10px;
-      margin:13px 0;
-      background:#3b82f6;
-      width:82%;
-    }
+    .screen-wrap{position:relative;width:520px;height:330px;margin-top:70px;}
+    .screen{position:absolute;right:24px;bottom:34px;width:370px;height:230px;background:#112943;border:10px solid #9fb8d8;border-radius:20px 20px 8px 8px;padding:22px;box-shadow:0 24px 45px rgba(7,29,58,.18);}
+    .screen:after{content:"";position:absolute;left:-44px;right:-44px;bottom:-30px;height:30px;background:#c4d0de;border-radius:0 0 30px 30px;}
+    .code-line{height:10px;border-radius:10px;margin:13px 0;background:#3b82f6;width:82%;}
     .code-line:nth-child(2){width:58%;background:var(--yellow);}
     .code-line:nth-child(3){width:92%;background:#8cc2ff;}
     .code-line:nth-child(4){width:68%;background:#ffffff;}
     .code-line:nth-child(5){width:76%;background:#3b82f6;}
-
-    .chart{
-      position:absolute;
-      left:0;
-      bottom:92px;
-      width:160px;
-      height:130px;
-      background:#fff;
-      border:1px solid #e1ecfa;
-      border-radius:20px;
-      box-shadow:0 18px 36px rgba(18,73,146,.12);
-      padding:22px;
-    }
-
+    .chart{position:absolute;left:0;bottom:92px;width:160px;height:130px;background:#fff;border:1px solid #e1ecfa;border-radius:20px;box-shadow:0 18px 36px rgba(18,73,146,.12);padding:22px;}
     .bars{height:86px;display:flex;align-items:end;gap:10px;}
     .bar{width:24px;border-radius:7px 7px 0 0;background:var(--blue);}
     .bar:nth-child(1){height:38%;}
     .bar:nth-child(2){height:60%;background:var(--yellow);}
     .bar:nth-child(3){height:86%;}
     .bar:nth-child(4){height:52%;background:#9bcaff;}
-
-    .float{
-      position:absolute;
-      background:#fff;
-      border:1px solid #e1ecfa;
-      border-radius:18px;
-      padding:14px 16px;
-      font-size:32px;
-      box-shadow:0 14px 28px rgba(18,73,146,.12);
-      z-index:5;
-    }
+    .float{position:absolute;background:#fff;border:1px solid #e1ecfa;border-radius:18px;padding:14px 16px;font-size:32px;box-shadow:0 14px 28px rgba(18,73,146,.12);z-index:5;}
     .float.code{right:0;top:92px;}
     .float.gear{right:-4px;bottom:104px;}
     .books{position:absolute;left:104px;bottom:16px;font-size:54px;z-index:2;}
     .plant{position:absolute;right:4px;bottom:4px;font-size:58px;z-index:2;}
 
-    .section{
-      padding:50px 58px;
-    }
+    .section{padding:54px 58px;}
+    .section.soft{background:linear-gradient(135deg,#f8fbff,#eef6ff);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+    .section-title{text-align:center;margin-bottom:30px;}
+    .section-title h2{display:inline-block;background:linear-gradient(135deg,#092954,#164b94);color:#fff;padding:16px 56px;border-radius:18px;font-size:34px;text-transform:uppercase;letter-spacing:1.2px;box-shadow:0 14px 28px rgba(7,29,58,.14);}
+    .section-subtitle{max-width:760px;margin:-12px auto 32px;text-align:center;color:var(--muted);font-size:17px;font-weight:650;}
 
-    .section-title{
-      text-align:center;
-      margin-bottom:30px;
-    }
-
-    .section-title h2{
-      display:inline-block;
-      background:linear-gradient(135deg,#092954,#164b94);
-      color:#fff;
-      padding:16px 56px;
-      border-radius:18px;
-      font-size:34px;
-      text-transform:uppercase;
-      letter-spacing:1.2px;
-      box-shadow:0 14px 28px rgba(7,29,58,.14);
-    }
-
-    .expertise{
-      display:grid;
-      grid-template-columns:repeat(5,1fr);
-      gap:18px;
-    }
-
-    .expert-card{
-      background:#f8fbff;
-      border:1px solid var(--line);
-      border-radius:22px;
-      padding:24px 16px;
-      text-align:center;
-      min-height:178px;
-      box-shadow:0 10px 24px rgba(18,73,146,.06);
-      transition:.25s ease;
-    }
+    .expertise{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;}
+    .expert-card{background:#f8fbff;border:1px solid var(--line);border-radius:22px;padding:24px 16px;text-align:center;min-height:178px;box-shadow:0 10px 24px rgba(18,73,146,.06);transition:.25s ease;}
     .expert-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(18,73,146,.12);}
+    .expert-icon{width:70px;height:70px;display:grid;place-items:center;margin:0 auto 16px;border-radius:22px;background:#eaf3ff;font-size:36px;border:1px solid #d7e8fd;}
+    .expert-card h3{font-size:18px;color:var(--blue-2);text-transform:uppercase;line-height:1.15;margin-bottom:8px;font-weight:950;}
+    .expert-card p{font-size:13.5px;color:var(--muted);font-weight:650;}
 
-    .expert-icon{
-      width:70px;
-      height:70px;
-      display:grid;
-      place-items:center;
-      margin:0 auto 16px;
-      border-radius:22px;
-      background:#eaf3ff;
-      font-size:36px;
-      border:1px solid #d7e8fd;
-    }
+    .help-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+    .help-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px 18px;min-height:148px;box-shadow:0 10px 24px rgba(18,73,146,.06);}
+    .help-card span{font-size:34px;display:block;margin-bottom:12px;}
+    .help-card h3{font-size:18px;color:var(--navy);margin-bottom:8px;}
+    .help-card p{font-size:14px;color:var(--muted);font-weight:650;}
 
-    .expert-card h3{
-      font-size:18px;
-      color:var(--blue-2);
-      text-transform:uppercase;
-      line-height:1.15;
-      margin-bottom:8px;
-      font-weight:950;
-    }
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+    .portfolio-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 28px rgba(18,73,146,.08);transition:.25s ease;}
+    .portfolio-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(18,73,146,.13);}
+    .portfolio-card img{width:100%;height:220px;object-fit:cover;background:#eef6ff;display:block;}
+    .portfolio-content{padding:20px;}
+    .portfolio-content h3{font-size:18px;color:var(--blue-2);margin-bottom:8px;text-transform:uppercase;}
+    .portfolio-content p{font-size:14px;color:var(--muted);font-weight:650;}
 
-    .expert-card p{
-      font-size:13.5px;
-      color:var(--muted);
-      font-weight:650;
-    }
-
-    .work-strip{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px;
-      margin-top:34px;
-    }
-
-    .work-box{
-      background:#eef6ff;
-      border:1px solid #d2e5fb;
-      border-radius:22px;
-      padding:22px 18px;
-      text-align:center;
-      color:#173a67;
-      font-weight:800;
-      min-height:136px;
-    }
+    .work-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px;}
+    .work-box{background:#eef6ff;border:1px solid #d2e5fb;border-radius:22px;padding:22px 18px;text-align:center;color:#173a67;font-weight:800;min-height:136px;}
     .work-box span{display:block;font-size:34px;margin-bottom:10px;}
 
-    .writing-panel{
-      background:linear-gradient(135deg,#f8fbff,#eef6ff);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-      padding:46px 58px;
-    }
+    .writing-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center;}
+    .writing-grid h2{font-size:38px;color:var(--navy);margin-bottom:12px;line-height:1.05;}
+    .writing-grid p{color:var(--muted);font-size:18px;font-weight:600;}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;}
+    .chip{background:#fff;border:1px solid #d7e7fb;color:#153864;border-radius:999px;padding:10px 14px;font-size:14px;font-weight:800;box-shadow:0 6px 14px rgba(18,73,146,.05);}
 
-    .writing-grid{
-      display:grid;
-      grid-template-columns:.9fr 1.1fr;
-      gap:28px;
-      align-items:center;
-    }
-
-    .writing-grid h2{
-      font-size:38px;
-      color:var(--navy);
-      margin-bottom:12px;
-      line-height:1.05;
-    }
-
-    .writing-grid p{
-      color:var(--muted);
-      font-size:18px;
-      font-weight:600;
-    }
-
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-    }
-
-    .chip{
-      background:#fff;
-      border:1px solid #d7e7fb;
-      color:#153864;
-      border-radius:999px;
-      padding:10px 14px;
-      font-size:14px;
-      font-weight:800;
-      box-shadow:0 6px 14px rgba(18,73,146,.05);
-    }
-
-    footer{
-      background:linear-gradient(90deg,#071d3a,#156fe8);
-      color:#fff;
-      display:grid;
-      grid-template-columns:1fr auto;
-      gap:28px;
-      align-items:center;
-      padding:36px 58px;
-    }
-
-    footer h2{
-      font-size:40px;
-      text-transform:uppercase;
-      line-height:1.05;
-    }
+    footer{background:linear-gradient(90deg,#071d3a,#156fe8);color:#fff;display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:36px 58px;}
+    footer h2{font-size:40px;text-transform:uppercase;line-height:1.05;}
     footer h2 span{display:block;color:var(--yellow);font-style:italic;}
-
-    .whatsapp{
-      display:inline-flex;
-      align-items:center;
-      gap:12px;
-      background:var(--green);
-      color:#fff;
-      text-decoration:none;
-      border-radius:18px;
-      padding:16px 24px;
-      font-size:25px;
-      font-weight:950;
-      box-shadow:0 14px 28px rgba(37,211,102,.28);
-      transition:.25s ease;
-    }
+    .whatsapp{display:inline-flex;align-items:center;gap:12px;background:var(--green);color:#fff;text-decoration:none;border-radius:18px;padding:16px 24px;font-size:25px;font-weight:950;box-shadow:0 14px 28px rgba(37,211,102,.28);transition:.25s ease;}
     .whatsapp:hover{transform:translateY(-3px);filter:brightness(.96);}
-
-    .small-note{
-      font-size:13px;
-      color:#d9e9ff;
-      margin-top:10px;
-      text-align:right;
-      font-weight:500;
-    }
+    .small-note{font-size:13px;color:#d9e9ff;margin-top:10px;text-align:right;font-weight:500;}
 
     @media(max-width:1050px){
       h1{font-size:46px;}
       .hero{grid-template-columns:1fr;padding:42px 28px;}
-      .benefits{grid-template-columns:repeat(2,1fr);}
-      .expertise{grid-template-columns:repeat(2,1fr);}
-      .work-strip{grid-template-columns:repeat(2,1fr);}
+      .benefits,.help-grid,.work-strip{grid-template-columns:repeat(2,1fr);}
+      .expertise,.portfolio-grid{grid-template-columns:repeat(2,1fr);}
       .writing-grid{grid-template-columns:1fr;}
       footer{grid-template-columns:1fr;text-align:center;}
       .small-note{text-align:center;}
@@ -453,8 +144,8 @@
       .page{padding:10px;}
       h1{font-size:34px;letter-spacing:-1px;}
       .lead{font-size:18px;}
-      .section,.writing-panel{padding:34px 20px;}
-      .expertise,.work-strip{grid-template-columns:1fr;}
+      .section{padding:34px 20px;}
+      .expertise,.portfolio-grid,.help-grid,.work-strip{grid-template-columns:1fr;}
       footer{padding:30px 20px;}
       footer h2{font-size:28px;}
       .screen-wrap{width:100%;transform:scale(.82);transform-origin:center;}
@@ -499,6 +190,8 @@
 
       <section class="section" id="expertise">
         <div class="section-title"><h2>Our Expertise</h2></div>
+        <p class="section-subtitle">A focused team supporting students and learners across technical, analytical, design, and business technology subjects.</p>
+
         <div class="expertise">
           <div class="expert-card"><div class="expert-icon">💻</div><h3>Programming</h3><p>OOP, Python, Java, C++, HTML/CSS</p></div>
           <div class="expert-card"><div class="expert-icon">🌐</div><h3>Web Development</h3><p>WordPress, Wix, frontend pages</p></div>
@@ -520,7 +213,60 @@
         </div>
       </section>
 
-      <section class="writing-panel">
+      <section class="section soft" id="help">
+        <div class="section-title"><h2>What We Help With</h2></div>
+        <p class="section-subtitle">Practical support for technical concepts, project structure, visuals, documentation, and professional presentation.</p>
+
+        <div class="help-grid">
+          <div class="help-card"><span>💻</span><h3>Programming Tasks</h3><p>Code guidance, logic explanation, debugging support, and concept clarity.</p></div>
+          <div class="help-card"><span>📑</span><h3>Reports & Presentations</h3><p>Structured reports, academic formatting, slides, and professional layouts.</p></div>
+          <div class="help-card"><span>🧩</span><h3>UML & System Design</h3><p>Use case, class, activity, sequence diagrams, and system flow visuals.</p></div>
+          <div class="help-card"><span>📊</span><h3>Dashboards & Analytics</h3><p>Data analysis, visual charts, Tableau dashboards, and insight summaries.</p></div>
+          <div class="help-card"><span>🎨</span><h3>UX/UI Prototypes</h3><p>Wireframes, user flows, mobile screens, and interactive prototype concepts.</p></div>
+          <div class="help-card"><span>🗄️</span><h3>Database Design</h3><p>ERD, normalization, SQL queries, schema design, and database documentation.</p></div>
+          <div class="help-card"><span>🌐</span><h3>Web Projects</h3><p>HTML/CSS pages, WordPress/Wix support, and responsive website sections.</p></div>
+          <div class="help-card"><span>📝</span><h3>Technical Documentation</h3><p>Software engineering, Agile, MIS, ethics, risk, and business IT writing.</p></div>
+        </div>
+      </section>
+
+      <section class="section" id="samples">
+        <div class="section-title"><h2>Sample Work</h2></div>
+        
+
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <img src="images/dashboard.png" alt="Sample data analytics dashboard">
+            <div class="portfolio-content"><h3>Data Dashboard</h3><p>Analytics, charts, KPIs, insights, and business intelligence visuals.</p></div>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="images/uml.png" alt="Sample UML and system design diagram">
+            <div class="portfolio-content"><h3>UML & System Design</h3><p>Use case, class, activity, sequence diagrams, and system architecture flows.</p></div>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="images/ui-prototype.png" alt="Sample UX UI prototype screens">
+            <div class="portfolio-content"><h3>UX/UI Prototype</h3><p>Mobile and web interface concepts, wireframes, and clickable prototype designs.</p></div>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="images/web-project.png" alt="Sample HTML CSS web project">
+            <div class="portfolio-content"><h3>Web Project</h3><p>Clean HTML/CSS layouts, landing pages, and responsive website sections.</p></div>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="images/report.png" alt="Sample academic report formatting">
+            <div class="portfolio-content"><h3>Report Formatting</h3><p>Professional report structure, tables, diagrams, references, and presentation.</p></div>
+          </div>
+
+          <div class="portfolio-card">
+            <img src="images/database.png" alt="Sample database ERD and SQL work">
+            <div class="portfolio-content"><h3>Database Work</h3><p>ERD, normalization, schema design, SQL queries, and database explanation.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section soft">
         <div class="writing-grid">
           <div>
             <h2>Support Areas</h2>
